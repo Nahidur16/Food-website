@@ -1,0 +1,73 @@
+/* Root style*/
+:root {
+  --Main-font: "Sansita Swashed", cursive;
+  --Second-font: "Poppins", sans-serif;
+  --orange-col: rgb(243, 150, 29);
+}
+/*Commont styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+html {
+  /* For 1 rem = 10px*/
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--Main-font);
+  font-weight: 300;
+  color: white;
+}
+/*Section 1*/
+.section-1 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-1-heading {
+  margin-top: -2.3rem;
+  font-size: 10rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  /*Shadow*/
+  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.555);
+}
+
+.section-1-icons i {
+  font-size: 30rem;
+  color: var(--orange-col);
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  -o-transform: translate(-50%, -50%) scale(0);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.555);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.section-1 i.change {
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transition: all 0.5s 0.5s ease;
+  -webkit-transition: all 0.5s 0.5s ease;
+  -moz-transition: all 0.5s 0.5s ease;
+  -ms-transition: all 0.5s 0.5s ease;
+  -o-transition: all 0.5s 0.5s ease;
+}
+/*End Section 1*/
